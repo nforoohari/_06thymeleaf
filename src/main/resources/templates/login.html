@@ -5,15 +5,12 @@
     <title>Title</title>
 </head>
 <body>
-
-<form action="#" th:action="@{/login2}" method="post">
+<form th:action="@{/loginProcess}" method="post">
     <div th:if="${param.error}">
-        <i>invalid username or password</i>
+        <i>Invalid username or password</i>
     </div>
-
-
-    <p> username :<input type="text" name="username"></p>
-    <p> password :<input type="text" name="password"></p>
+    <p> Username :<input type="text" name="username"></p>
+    <p> Password :<input type="text" name="password"></p>
     <input type="submit" value="login">
 </form>
 </body>
